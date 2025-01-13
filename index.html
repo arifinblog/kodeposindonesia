@@ -34,7 +34,7 @@ body {margin:0;}
 .navbar {
   overflow: hidden;
   background-color: #333;
-  position: fixed;
+  position: absolute;
   top: 0;
   width: 100%;
 }
@@ -88,12 +88,12 @@ body {margin:0;}
             <?php include('loader01.html'); ?>
         </div>
        <style>
-footer {
+foot {
   background-color: #121315;
   color: #a7a7a7;
   font-size: 16px;
 }
-footer * {
+foot * {
   font-family: "Poppins", sans-serif;
   box-sizing: border-box;
   border: none;
@@ -143,17 +143,7 @@ ul li a:hover {
   line-height: 2;
   margin: 0;
 }
-input,
-button {
-  font-size: 1em;
-  padding: 1em;
-  width: 100%;
-  border-radius: 5px;
-  margin-bottom: 5px;
-}
-button {
-  background-color: #c7940a;
-  color: #ffffff;
+
 }
 div.social {
   display: flex;
@@ -170,18 +160,18 @@ div.social {
   padding: 0.3em 1em;
   background-color: #25262e;
 }
-.footer-menu{
+.foot-menu{
   float: left;
     margin-top: 10px;
 }
 
-.footer-menu a{
+.foot-menu a{
   color: #cfd2d6;
   padding: 6px;
 
   text-decoration: none;
 }
-.footer-menu a:hover{
+.foot-menu a:hover{
   color: #27bcda;
 }
 .copyright p {
@@ -196,7 +186,7 @@ div.social {
 }
 </style>
   <!-- Site footer -->
-    <footer>
+    <foot>
       <div class="row primary">
         <div class="column about">
           <h3>Foolish Developer</h3>
@@ -246,18 +236,11 @@ div.social {
 
             </ul>
           </div>
-        <div class="column subscribe">
-          <h3>Newsletter</h3>
-          <div>
-            <input type="email" placeholder="Your email id here" />
-            <button>Subscribe</button>
-          </div>
-
-        </div>
+       
       </div>
 
       <div class="row copyright">
-         <div class="footer-menu">
+         <div class="foot-menu">
 
                        <a href="">Home</a>
                        <a href="">About</a>
@@ -269,6 +252,6 @@ div.social {
                     </div>
         <p>Copyright &copy; 2025 kodeposindonesia.info</p>
       </div>
-    </footer>
+    </foot>
     </body>
 </html>
