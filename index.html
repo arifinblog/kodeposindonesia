@@ -88,170 +88,92 @@ body {margin:0;}
             <?php include('loader01.html'); ?>
         </div>
        <style>
-foot {
-  background-color: #121315;
-  color: #a7a7a7;
-  font-size: 16px;
-}
-foot * {
-  font-family: "Poppins", sans-serif;
-  box-sizing: border-box;
-  border: none;
-  outline: none;
-}
-.row {
-  padding: 1em 1em;
-}
-.row.primary {
-  display: grid;
-  grid-template-columns: 2fr 1fr 1fr 2fr;
-  align-items: stretch;
-}
-.column {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  padding: 0 2em;
-  min-height: 15em;
-}
-h3 {
-  width: 100%;
-  text-align: left;
-  color: white;
-  font-size: 1.4em;
-  white-space: nowrap;
-}
-ul {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  padding: 0;
-  margin: 0;
-}
-li:not(:first-child) {
-  margin-top: 0.8em;
-}
-ul li a {
-  color: #a7a7a7;
-  text-decoration: none;
-}
-ul li a:hover {
-  color: #2a8ded;
-}
-.about p {
-  text-align: justify;
-  line-height: 2;
-  margin: 0;
+.footer {
+    padding: 40px 0;
+    background-color: #0d1117;
+    color: white;
 }
 
-}
-div.social {
-  display: flex;
-  justify-content: space-around;
-  font-size: 2.4em;
-  flex-direction: row;
-  margin-top: 0.5em;
-}
-.social i {
-  color: #bac6d9;
+.footer ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
 }
 
-.copyright {
-  padding: 0.3em 1em;
-  background-color: #25262e;
-}
-.foot-menu{
-  float: left;
-    margin-top: 10px;
+.footer li {
+    display: inline-block; /* Change to inline-block for horizontal layout */
+    padding: 0 10px;
 }
 
-.foot-menu a{
-  color: #cfd2d6;
-  padding: 6px;
+.footer ul a {
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+}
 
-  text-decoration: none;
+.footer ul a:hover {
+    opacity: 1;
 }
-.foot-menu a:hover{
-  color: #27bcda;
-}
-.copyright p {
-  font-size: 0.9em;
-  text-align: right;
-}
-@media screen and (max-width: 850px) {
-  .row.primary {
-    grid-template-columns: 1fr;
-  }
 
+.footer .social {
+    text-align: center;
+    padding-bottom: 25px;
 }
+
+.footer .social > a {
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    margin: 0 8px;
+    color: inherit;
+    opacity: 0.75;
+}
+
+.footer .social > a:hover {
+    opacity: 0.9;
+}
+
+.footer .copyright {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: #aaa;
+    margin-bottom: 0;
+}
+.footer .footer-break{
+  height:2px;
+  border-width:0;
+  color:gray;
+  background-color:white
+    }
 </style>
   <!-- Site footer -->
-    <foot>
-      <div class="row primary">
-        <div class="column about">
-          <h3>Foolish Developer</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae,
-            voluptatem corporis error non,
-          </p>
-                    <div class="social">
-                      <i class="fa-brands fa-facebook-square"></i>
-                    
-            <i class="fa-brands fa-whatsapp-square"></i>
-                    </div>
-        </div>
-        <div class="column links">
-          <h3>Some Links</h3>
-          <ul>
-            <li>
-              <a href="#faq">F.A.Q</a>
-            </li>
-            <li>
-              <a href="#cookies-policy">Cookies Policy</a>
-            </li>
-            <li>
-              <a href="#terms-of-services">Terms Of Service</a>
-            </li>
-            <li>
-              <a href="#support">Support</a>
-            </li>
-
-          </ul>
-        </div>
-          <div class="column links">
-            <h3>Some Links</h3>
-            <ul>
-              <li>
-                <a href="#faq">F.A.Q</a>
-              </li>
-              <li>
-                <a href="#cookies-policy">Cookies Policy</a>
-              </li>
-              <li>
-                <a href="#terms-of-services">Terms Of Service</a>
-              </li>
-              <li>
-                <a href="#support">Support</a>
-              </li>
-
-            </ul>
-          </div>
-       
-      </div>
-
-      <div class="row copyright">
-         <div class="foot-menu">
-
-                       <a href="">Home</a>
-                       <a href="">About</a>
-                       <a href="">Contact</a>
-                       <a href="">Blog</a>
-     <a href="">Social</a>
-
-
-                    </div>
-        <p>Copyright &copy; 2025 kodeposindonesia.info</p>
-      </div>
-    </foot>
+    <footer class="footer" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
+    <div class="social" role="navigation" aria-labelledby="social-heading">
+        <h3 id="social-heading" class="sr-only">Follow us on social media</h3>
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#" aria-label="Mastodon"><i class="fa-brands fa-mastodon"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+    <hr class="footer-break">
+    <ul class="footer-links" role="navigation" aria-labelledby="footer-links-heading">
+        <h3 id="footer-links-heading" class="sr-only">Footer Links</h3>
+        <li><a href="#">Site Home</a></li>
+        <li><a href="#">Playground</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Sitemap</a></li>
+        <li><a href="#">Contents</a></li>
+    </ul>
+    <p class="copyright">© 2024 <a style='color:inherit' href="https://www.sdavidprince.space">SDavidPrince</a>. Demo </p>
+</footer>
     </body>
 </html>
